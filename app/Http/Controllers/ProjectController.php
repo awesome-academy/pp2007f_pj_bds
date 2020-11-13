@@ -16,4 +16,9 @@ class ProjectController extends Controller
     {
         return view('pages.du-an.singlePost');
     }
+
+    public function chuDauTu()
+    {
+        return view('pages.du-an.chu_dau_tu');
+    }
 }
