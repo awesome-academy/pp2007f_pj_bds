@@ -16,4 +16,9 @@ class ProjectController extends Controller
     {
         return view('pages.du-an.singlePost');
     }
+
+    public function thietKeMatBang()
+    {
+        return view('pages.du-an.thietke_matbang');
+    }
 }
