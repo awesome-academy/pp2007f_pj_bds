@@ -21,4 +21,9 @@ class ProjectController extends Controller
     {
         return view('pages.du-an.thietke_matbang');
     }
+
+    public function tienDoDuAn()
+    {
+        return view('pages.du-an.tien_do_du_an');
+    }
 }
