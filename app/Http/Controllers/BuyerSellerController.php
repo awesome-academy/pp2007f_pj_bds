@@ -13,7 +13,7 @@ class BuyerSellerController extends Controller
 
         $buyersellercost=BuyerSeller::all();
         $buyerSellers=BuyerSeller::with(['imageDemo','disTrict','buyerSellerArea'])->paginate(10);
-    
+        
         if ($request->ajax()) {
             return view('pages.canmuacanthue.presult', compact('buyersellercost','buyerSellers'));
         }

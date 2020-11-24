@@ -292,5 +292,13 @@ class MenuSeeder extends Seeder
             'type' => 'contact'],
         	]);
     }
+           
+
+
+
+
+
+
+
 }
 
