@@ -19,10 +19,7 @@ class HomeController extends Controller
 
         view()->share('menus0', $menus0);
         view()->share('arr_menu', $arr_menu);
-
-
-
-
+        
         return view('pages.index');
         
     }
