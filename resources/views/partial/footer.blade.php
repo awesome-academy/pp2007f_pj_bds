@@ -291,20 +291,7 @@
             </div>
         </div>
         <div class="footer-infomation">
-            <div class="footer-info-col1">
-                Giấy ĐKKD số 0104630479 do Sở KHĐT TP Hà Nội cấp lần đầu ngày 02/06/2010<br>
-                Giấy phép ICP số 2399/GP-STTTT do Sở TTTT Hà Nội cấp ngày 04/09/2014<br>
-                Giấy phép GH ICP số 3832/GP-TTĐT do Sở TTTT Hà Nội cấp ngày 08/08/2019
-            </div>
-            <div class="footer-info-col2">
-                Chịu trách nhiệm nội dung GP ICP: Bà Đặng Thị Hường<br>
-                Chịu trách nhiệm sàn GDTMĐT: Ông Vũ Triệu Vương<br />(Robert Vuong Trieu Vu)<br />
-                Quy chế, quy định giao dịch có hiệu lực từ 23/02/2020
-            </div>
-            <div class="footer-info-col3">
-                Copyright © 2007 - 2020 Batdongsan.com.vn<br>
-                Ghi rõ nguồn "Batdongsan.com.vn" khi phát hành lại thông tin từ website này.
-            </div>
+            {{ getEndFooter() }}
             <div class="clear"></div>
         </div>
     </div>

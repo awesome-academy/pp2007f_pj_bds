@@ -35,6 +35,8 @@
         }
     },
     "autoload": {
+        "files": ["app/Helpers/endfooter.php"],
+
         "psr-4": {
             "App\\": "app/"
         },
