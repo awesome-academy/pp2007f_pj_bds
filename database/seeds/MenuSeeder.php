@@ -96,6 +96,7 @@ class MenuSeeder extends Seeder
 
     
            
+       
         //insert Support Menu
 
         DB::table('menus')->insert([
@@ -168,6 +169,80 @@ class MenuSeeder extends Seeder
                 'type' => 'Support',
     
             ]);
+
+            DB::table('menus')->insert([
+                'name'=> 'Liên hệ',
+                'parent_id'=>'1',
+                'slug' => 'lien-he',
+                'order'=> '5',
+                'type' => 'Support',
+    
+            ]);
+
+            DB::table('menus')->insert([
+                'name'=> 'Sitemap',
+                'parent_id'=>'1',
+                'slug' => 'trang-sitemap',
+                'order'=> '6',
+                'type' => 'Support',
+    
+            ]);
+
+            DB::table('menus')->insert([
+                'name'=> 'Quy định đăng tin',
+                'parent_id'=>'2',
+                'slug' => 'quy-dinh-dang-tin',
+                'order'=> '1',
+                'type' => 'Support',
+    
+            ]);
+
+            DB::table('menus')->insert([
+                'name'=> 'Quy chế hoạt động',
+                'parent_id'=>'2',
+                'slug' => 'quy-dinh-su-dung',
+                'order'=> '2',
+                'type' => 'Support',
+    
+            ]);
+
+            DB::table('menus')->insert([
+                'name'=> 'Điều khoản thỏa thuận',
+                'parent_id'=>'2',
+                'slug' => 'dieu-khoan-thoa-thuan',
+                'order'=> '3',
+                'type' => 'Support',
+    
+            ]);
+
+            DB::table('menus')->insert([
+                'name'=> 'Chính sách bảo mật',
+                'parent_id'=>'2',
+                'slug' => 'chinh-sach-bao-mat-thong-tin',
+                'order'=> '4',
+                'type' => 'Support',
+    
+            ]);
+
+            DB::table('menus')->insert([
+                'name'=> 'Giải quyết khiếu nại',
+                'parent_id'=>'2',
+                'slug' => 'giai-quyet-khieu-nai',
+                'order'=> '5',
+                'type' => 'Support',
+    
+            ]);
+
+            DB::table('menus')->insert([
+                'name'=> 'Góp ý báo lỗi',
+                'parent_id'=>'2',
+                'slug' => 'shrbaUORGfT7arZVJ',
+                'order'=> '6',
+                'type' => 'Support',
+    
+            ]);
+
+        
 
             DB::table('menus')->insert([
                 'name'=> 'Liên hệ',
@@ -604,7 +679,29 @@ class MenuSeeder extends Seeder
     
                 ['name'=> 'Zalo Icon',
                 'parent_id'=> '0',
-                'slug' => 'https://file4.batdongsan.com.vn/images/newhome/zalo2.png',
+                'slug' => 'https://file4.batdongsan.com.vn/images/newhome/zalo2.png'],
+
+                ['name'=> 'https://file4.batdongsan.com.vn/images/newhome/da-dang-ki-bct.png',
+                'parent_id'=> '0',
+                'slug' => 'http://online.gov.vn/Home/WebDetails/5480',
+                'order'=> '8',
+                'type' => 'contact'],
+    
+                ['name'=> 'https://file4.batdongsan.com.vn/images/newhome/fb.png',
+                'parent_id'=> '0',
+                'slug' => 'https://www.facebook.com/Batdongsandv',
+                'order'=> '9',
+                'type' => 'contact'],
+    
+                ['name'=> 'https://file4.batdongsan.com.vn/images/newhome/youtube.png',
+                'parent_id'=> '0',
+                'slug' => 'https://www.youtube.com/channel/UCLAgPnJX3b3vff4uBsyufPQ',
+                'order'=> '10',
+                'type' => 'contact'],
+    
+                ['name'=> 'https://file4.batdongsan.com.vn/images/newhome/zalo2.png',
+                'parent_id'=> '0',
+                'slug' => 'https://zalo.me/2606322533378009715',
                 'order'=> '11',
                 'type' => 'contact'],
     
@@ -614,7 +711,7 @@ class MenuSeeder extends Seeder
                 'order'=> '12',
                 'type' => 'contact'],
     
-                ['name'=> 'Dropdown Icon',
+                ['name'=> 'https://file4.batdongsan.com.vn/images/newhome/down-arrow-grey.png',
                 'parent_id'=> '1',
                 'slug' => '',
                 'order'=> '13',
@@ -630,12 +727,12 @@ class MenuSeeder extends Seeder
                 'parent_id'=> '1',
                 'slug' => 'Tầng 9, tòa nhà Vĩnh Trung Plaza, số 255 – 257 Hùng Vương, phường Vĩnh Trung, quận Thanh Khê, TP. Đà Nẵng<br>Điện thoại: (0236) 3 666 968 - Mobile: 0904 907 279',
                 'order'=> '16',
-                'type' => 'contact'],
+                'type' => 'contact']
                 ]);
+                
 
    	}
    	
         //
         
-    }
-           
+}
