@@ -20,8 +20,7 @@ class NhaDatBanController extends Controller
         ->where('menu_category.name', '=', "Bán căn hộ chung cư")
         ->orWhere('menu_category.name', '=', "Bán nhà riêng")
         ->orWhere('menu_category.name', '=', "Bán nhà mặt phố")
-        ->orderBy('products.id', 'asc')
-        ->get();  //->paginate(5);
+        ->orderBy('products.id', 'asc')->paginate(10);
         return view("pages.nhadatban.index", compact('products',));
 
     }

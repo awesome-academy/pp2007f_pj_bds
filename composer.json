@@ -35,8 +35,14 @@
         }
     },
     "autoload": {
-        "files": ["app/Helpers/endfooter.php"],
+        
 
+        "files": [
+            "app/Helpers/rightMenu.php",
+            "app/Helpers/ContactFunction.php",
+            "app/Helpers/fn_menu_support.php",
+            "app/Helpers/endfooter.php"
+        ],
         "psr-4": {
             "App\\": "app/"
         },

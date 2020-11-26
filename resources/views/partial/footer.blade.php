@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <footer>
     <div class="home-small">
         <div class="footer-row">
@@ -296,6 +297,9 @@
         </div>
     </div>
 </footer>
+=======
+{{ getContact()}}
+>>>>>>> 80fe8d6b4ef1faac93b07d67ee76b0e3e07773ec
 
 <div class="modal fade" id="dialogPopup" role="dialog">
     <div class="nomodal"></div>

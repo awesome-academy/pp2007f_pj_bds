@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 // HomeController index
 Route::get('/', 'HomeController@index')->name('home');
 
+
 // check post
 Route::get('/post', 'PostController@post');
 
@@ -89,3 +90,10 @@ Route::get('/tu-van-phong-thuy', 'PhongThuyController@index2')->name('tuvanphong
 Route::get('/phong-thuy-nha-o', 'PhongThuyController@index3')->name('phongthuynhao');
 Route::get('/phong-thuy-van-phong', 'PhongThuyController@index4')->name('phongthuyvanphong');
 Route::get('/phong-thuy-theo-tuoi', 'PhongThuyController@index5')->name('phongthuytheotuoi');
+
+//   ADMIN
+Route::prefix('/admin')->group(function () {
+    Route::get('/master',function () {
+        return view('admin.master');
+    });
+});

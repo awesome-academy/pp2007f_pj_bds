@@ -35,6 +35,7 @@ class DatabaseSeeder extends Seeder
         $this->call(ImageSeeder::class);
         $this->call(BrokerSeeder::class);
         $this->call(BusinessSeeder::class);
+        $this->call(MenuSeeder::class);
 
         //Huy
         $this->call(MenuCategorySeeder::class);
