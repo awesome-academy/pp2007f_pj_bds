@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Broker;
 use App\Models\Business;
 
-class DanhbaController extends Controller
+class DanhBaController extends Controller
 {
     //
     public function index() {

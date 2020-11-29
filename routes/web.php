@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 // HomeController index
 Route::get('/', 'HomeController@index')->name('home');
 
+
 // check post
 Route::get('/post', 'PostController@post');
 
@@ -77,7 +78,7 @@ Route::get('/noi-ngoai-that', 'NoiNgoaiThatController@index');
 
 //Canmuacanthue route
 
-Route::get('/can-mua-can-thue/', 'BuyerSellerController@index')->name('buyerseller');
+Route::get('/can-mua-can-thue', 'BuyerSellerController@index')->name('buyerseller');
 Route::get('/nha-dat-can-thue', 'BuyerSellerController@seller')->name('seller');
 Route::get('/nha-dat-can-mua', 'BuyerSellerController@buyer')->name('buyer');
 Route::get('/can-mua-can-thue-post', 'BuyerSellerController@post')->name('buyersellerpost');
@@ -91,3 +92,24 @@ Route::get('/tu-van-phong-thuy', 'PhongThuyController@index2')->name('tuvanphong
 Route::get('/phong-thuy-nha-o', 'PhongThuyController@index3')->name('phongthuynhao');
 Route::get('/phong-thuy-van-phong', 'PhongThuyController@index4')->name('phongthuyvanphong');
 Route::get('/phong-thuy-theo-tuoi', 'PhongThuyController@index5')->name('phongthuytheotuoi');
+
+//   ADMIN
+Route::prefix('/admin')->group(function () {
+    Route::get('/master',function () {
+        return view('admin.master');
+    });
+
+// admin
+    Route::get('/user/index','UserController@index')->name('userIndex');
+    Route::get('/user/create','UserController@create')->name('createUser');
+    Route::post('/user/create','UserController@store')->name('storeUser');
+
+    Route::get('/user/edit','UserController@edit')->name('editUser');
+
+});
+// admin/menu
+Route::prefix('/admin')->group(function () {
+    // admin/category
+    Route::get('/category', 'CategoryController@index')->name('categoryIndex');
+    Route::get('/category/create', 'CategoryController@create')->name('createCategory');
+});
