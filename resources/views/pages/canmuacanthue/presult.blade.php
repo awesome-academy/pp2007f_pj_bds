@@ -3,15 +3,15 @@
 
     <div class="vip1" uid="217282">
         <div class="p-title">
-            <a href="https://batdongsan.com.vn/mua-dat-nen-du-an-ben-cat-bd/can-mua-dat-khu-vuc-my-phuoc-1-2-3-4-tpm-binh-duong-vsip-1-2-tdm-mua-nhanh-gia-cao-ad104597"
-                title="Cần mua đất khu vực Mỹ Phước 1 - 2 - 3 - 4, TPM Bình Dương, Vsip 1 - 2, tdm, mua nhanh, giá cao">{{ $buyerSeller->title }}</a>
+            <a href="{{ route('buyersellerpost',$buyerSeller->id) }}"
+                title="{{ $buyerSeller->title }}">{{ $buyerSeller->title }}</a>
         </div>
         <div class="p-main">
 
 
             <div class="p-main-image-crop">
                 <a
-                    href="https://batdongsan.com.vn/mua-dat-nen-du-an-ben-cat-bd/can-mua-dat-khu-vuc-my-phuoc-1-2-3-4-tpm-binh-duong-vsip-1-2-tdm-mua-nhanh-gia-cao-ad104597">
+                    href="{{ route('buyersellerpost',$buyerSeller->id) }}">
 
 
                     @forelse ($buyerSeller->imageDemo as $item)
@@ -36,9 +36,14 @@
                             tỷ</span>&nbsp;
                         Diện tích: <span class="product-area">{{ $buyerSeller->buyerSellerArea->name }}</span><br>
                         Quận/Huyện: <span class="product-city-dist">{{ $buyerSeller->district->name }}</span>
+                        @foreach ($provinces->where('code',$buyerSeller->district->parent_code) as $province)
                         <span class="inline-blk">
-                            Tỉnh/TP: <span class="product-city-dist">{{ $buyerSeller->district->path }}</span>
+                            
+                            
+                            Tỉnh/TP: <span class="product-city-dist">{{  $province->name }}</span>
                         </span>
+                        @endforeach
+
                     </div>
                     <div class="floatright mar-right-10 bot-right-abs">
                         {{ $buyerSeller->start }}

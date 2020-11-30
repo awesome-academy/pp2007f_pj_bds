@@ -9,16 +9,16 @@ class District extends Model
     //
     public function product()
     {
-        return $this->hasMany('App\Products', 'districts_id');
+        return $this->hasMany(Products::class, 'districts_id');
     }
 
     public function province()
     { 
-        return $this->belongsTo('App\Province', 'code');
+        return $this->belongsTo(Province::class, 'code');
     }
 
     public function wards()
     {
-        return $this->hasMany('App\Ward', 'parent_code');
+        return $this->hasMany(Ward::class, 'parent_code');
     }
 }

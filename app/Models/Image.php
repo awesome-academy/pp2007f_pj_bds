@@ -9,6 +9,6 @@ class Image extends Model
     //
     public function comments()
     {
-        return $this->belongsTo('App\Products', 'id');
+        return $this->belongsTo(Products::class, 'products_id');
     }
 }

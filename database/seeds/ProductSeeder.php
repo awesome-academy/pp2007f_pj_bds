@@ -19,9 +19,11 @@ class ProductSeeder extends Seeder
         DB::table('products')->insert ([
         'title' => $faker->sentence,
         'type' => rand(0,2),
+        'post_type_id' => rand(1, 4),
         'price' => rand(1, 10),
         'area' => rand(20, 200),
         'image_id' => rand(1, 50),
+        'views' => rand(100,1000),
         'slug' => rand(1, 100000),
         'number_of_bedroom' => rand(1, 5),
         'number_of_restroom' => rand(1, 3),

@@ -12,7 +12,7 @@ class MenuCategorySeeder extends Seeder
      */
     public function run()
     {
-        DB::table('menu_category')->insert([
+        DB::table('menu_categories')->insert([
             ['name' => 'Bán căn hộ chung cư'],
             ['name' => 'Bán nhà riêng'],
             ['name' => 'Bán nhà mặt phố'],

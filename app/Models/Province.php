@@ -17,12 +17,12 @@ class Province extends Model
 
     public function product()
     {
-        return $this->hasMany('App\Products', 'provinces_id');
+        return $this->hasMany(Products::class, 'provinces_id');
     }
 
 
     public function districts()
     {
-        return $this->hasMany('App\District', 'parent_code');
+        return $this->hasMany(District::class, 'parent_code');
     }
 }

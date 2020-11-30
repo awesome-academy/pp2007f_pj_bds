@@ -29,6 +29,8 @@ class DatabaseSeeder extends Seeder
         $this->call(ImageDemoSeeder::class);
         $this->call(BuyerSellerSeeder::class);
         $this->call(MenuSeeder::class);
+        $this->call(UserSeeder::class);
+        
         
         
         //hieu
