@@ -337,7 +337,7 @@
 
             <!-- Side Nav START -->
             <div class="side-nav expand-lg">
-                <div class="side-nav-inner">
+            <div class="side-nav-inner">
                     <ul class="side-nav-menu scrollable">
                         <li class="side-nav-header">
                             <span>Navigation</span>
@@ -417,15 +417,12 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="data-table.html">Edit Users</a>
                                     <a href=" {{route(  'userIndex' ) }}  ">All User</a>
                                 </li>
                                 <li>
                                     <a href="{{ route('createUser') }}">Create New User</a>
                                 </li>
-                                <li>
-                                    <a href="#">Edit User</a>
-                                </li>
+
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
