@@ -1,8 +1,12 @@
 @extends('layouts.master')
 
 @section('styles')
+<<<<<<< HEAD
     <link rel="stylesheet"
         href="https://staticfile.batdongsan.com.vn/css/filestatic.ver202011191123.msvbds.FrontEnd.min.css" />
+=======
+<link rel="stylesheet" href="https://staticfile.batdongsan.com.vn/css/filestatic.ver202011191123.msvbds.FrontEnd.min.css" />
+>>>>>>> e94aa7a... fix_view_share_in_all_page
 @endsection
 
 @section('content')
@@ -65,17 +69,36 @@
                             <div class="kqchitiet">
                                 <span class="diadiem - title mar - right - 15"><b> Khu vực:&nbsp;</b><strong
                                         class="greencolor">Mua nhà mặt phố</strong> tại <a
+<<<<<<< HEAD
                                         href="/mua-nha-mat-pho-binh-thanh"
                                         title="Bình Thạnh">{{ $buyerSeller->district->name }}</a> {{ $buyerSeller->district->path }}</span></br><span style="display: inline-block;"><span
                                         class="gia-title mar-right-15"><b>Giá: </b><strong>{{ $buyerSeller->price }} </strong> tỷ</span>
                                         <span class="gia-title"><b>Diện tích: </b><strong>{{ $buyerSeller->buyerSellerArea->name }}</strong></span></span>
+=======
+                                        href="/mua-nha-mat-pho-binh-thanh" title="Bình Thạnh">Quận Bình Thạnh</a>, <a
+                                        href="/mua-nha-mat-pho-quan-1" title="Quận 1"> Quận 1</a>, <a
+                                        href="/mua-nha-mat-pho-quan-10" title="Quận 10"> Quận 10</a>, <a
+                                        href="/mua-nha-mat-pho-quan-3" title="Quận 3"> Quận 3</a>, <a
+                                        href="/mua-nha-mat-pho-thu-duc" title="Thủ Đức">Quận Thủ Đức</a> - Hồ Chí
+                                    Minh</span></br><span style="display: inline-block;"><span
+                                        class="gia-title mar-right-15"><b>Giá: </b><strong>1 tỷ - 10 tỷ</strong></span><span
+                                        class="gia-title"><b>Diện tích: </b><strong>Không xác định</strong></span></span>
+>>>>>>> e94aa7a... fix_view_share_in_all_page
                             </div>
                             <div class="pm-mota">
                                 Thông tin mô tả
                             </div>
                             <div class="pm-content stat" ct="2" ac="2" cid="54199">
                                 <div class="pm-desc">
+<<<<<<< HEAD
                                     {{ $buyerSeller->content }}
+=======
+                                    Cần tìm mua nhà chính chủ giá tốt, chưa qua kinh doanh, ngang trên 3m, có kết
+                                    cấu.<br />Đúng nhu cầu alo mình đi xem nha liền, và xuống tiền ngay nhé.<br />Mặt tiền
+                                    từ 1 tỷ - 10 tỷ.<br />Khu vực: Q1, 3, 10, Bình Thạnh, Phú Nhuận, Tân Bình, Gò Vấp và Thủ
+                                    Đức.<br />Nếu mua được giá tốt sẽ gửi thêm 0,5% - 1.5%. Cho ace giới thiệu.<br />Lh:
+                                    Xuân Phát 0934868414.<br />Email: xuantam88xd@gmail.com.<br />
+>>>>>>> e94aa7a... fix_view_share_in_all_page
                                 </div>
                             </div>
                             <!-- begin content-detail-->
@@ -95,16 +118,29 @@
                                                                 Địa chỉ
                                                             </div>
                                                             <div class="right">
+<<<<<<< HEAD
                                                                 {{ $buyerSeller->district->path }}
+=======
+                                                                Th&#x1EE7; &#x110;&#x1EE9;c, Qu&#x1EAD;n 3, Qu&#x1EAD;n 10,
+                                                                Qu&#x1EAD;n 1, B&#xEC;nh Th&#x1EA1;nh - H&#x1ED3; Ch&#xED;
+                                                                Minh
+>>>>>>> e94aa7a... fix_view_share_in_all_page
                                                             </div>
                                                             <div style="clear: both"></div>
                                                         </div>
                                                         <div style="background: #ededed; padding: 5px 0 5px 10px;">
                                                             <div class="left">
+<<<<<<< HEAD
                                                                 Mã số 
                                                             </div>
                                                             <div class="right">
                                                                 {{ $buyerSeller->id }}
+=======
+                                                                Mã số
+                                                            </div>
+                                                            <div class="right">
+                                                                105920
+>>>>>>> e94aa7a... fix_view_share_in_all_page
                                                             </div>
                                                             <div style="clear: both"></div>
                                                         </div>
@@ -123,7 +159,11 @@
                                                                 Ngày đăng tin
                                                             </div>
                                                             <div class="right">
+<<<<<<< HEAD
                                                                 {{ $buyerSeller->start }}
+=======
+                                                                24-11-2020
+>>>>>>> e94aa7a... fix_view_share_in_all_page
                                                             </div>
                                                             <div style="clear: both"></div>
                                                         </div>
@@ -132,7 +172,11 @@
                                                                 Ngày hết hạn
                                                             </div>
                                                             <div class="right">
+<<<<<<< HEAD
                                                                 {{ $buyerSeller->stop }}
+=======
+                                                                04-12-2020
+>>>>>>> e94aa7a... fix_view_share_in_all_page
                                                             </div>
                                                             <div style="clear: both"></div>
                                                         </div>
@@ -198,7 +242,11 @@
                             </div>
                             <!--end content-detail-->
                             <!--begin bottom-->
+<<<<<<< HEAD
                             <div class="bottom">
+=======
+                            <div class="pm-bottom">
+>>>>>>> e94aa7a... fix_view_share_in_all_page
                                 <div style="">
                                     <a id="emailregister" class="fancybox.iframe" rel="nofollow">
                                         <img src="https://file4.batdongsan.com.vn/images/opt/btnClick.png"
@@ -342,12 +390,17 @@
                                     </div>
                                     <div class="Repeat">
                                         <h2>
+<<<<<<< HEAD
                                             Mua nhà mặt phố tại {{ $buyerSeller->district->path }}
+=======
+                                            Mua nh&#xE0; m&#x1EB7;t ph&#x1ED1; t&#x1EA1;i Qu&#x1EAD;n B&#xEC;nh Th&#x1EA1;nh
+>>>>>>> e94aa7a... fix_view_share_in_all_page
                                         </h2>
                                     </div>
                                     <div class="Right">
                                     </div>
                                 </div>
+<<<<<<< HEAD
                                 @foreach ($buyerSellers as $buyerSeller)
 
 
@@ -406,6 +459,56 @@
                             @endforeach
                             
 
+=======
+                                <div class="vip5" uid="1295455">
+                                    <div class="p-title">
+                                        <a href="/mua-nha-mat-pho-binh-thanh/can-mua-nha-cac-quan-trung-tam-tphcm-ad106449"
+                                            title="C&#x1EA7;n mua nh&#xE0; c&#xE1;c qu&#x1EAD;n trung t&#xE2;m TPHCM">C&#x1EA7;n
+                                            mua nh&#xE0; c&#xE1;c qu&#x1EAD;n trung t&#xE2;m TPHCM</a>
+                                    </div>
+                                    <div class="p-main">
+                                        <div class="p-main-image-crop">
+                                            <a
+                                                href="/mua-nha-mat-pho-binh-thanh/can-mua-nha-cac-quan-trung-tam-tphcm-ad106449">
+                                                <img class="product-avatar-img"
+                                                    src="https://staticfile.batdongsan.com.vn/images/nophoto-175x116.jpg"
+                                                    alt="C&#x1EA7;n mua nh&#xE0; c&#xE1;c qu&#x1EAD;n trung t&#xE2;m TPHCM">
+                                            </a>
+                                        </div>
+                                        <div class="p-content pos-relative">
+                                            <div class="p-main-tex mar-bot-8">Xem chi ti&#x1EBF;t t&#x1EA1;i:
+                                                http://vphomes.vn/mua-nha-dat/ 1. Ch&#xFA;ng t&#xF4;i c&#x1EA7;n nh&#xE0;
+                                                khu trung t&#xE2;m, thu&#x1ED9;c Tphcm. &#x1AF;u ti&#xEA;n nh&#xE0;
+                                                ph&#x1ED1; m&#x1EB7;t ti&#x1EC1;n, t&#xE0;i ch&#xED;nh d&#x1B0;&#x1EDB;i 30
+                                                t&#x1EF7;. C&#xE1;c qu&#x1EAD;n 1, 3, 4, 10, 11, Ph&#xFA; Nhu&#x1EAD;n,
+                                                B&#xEC;nh Th&#x1EA1;nh... Kh&#xF4;ng mua c&#x103;n h&#x1ED9; chung c&#x1B0;.
+                                                2. B&#x1B0;&#x1EDB;c 1: Kh&#xE1;ch h&#xE0;ng g&#x1EED;i h&#x1ED3; s&#x1A1;
+                                                &#x111;&#x1EA7;y &#x111;&#x1EE7; nh&#xE0; &#x111;&#x1EA5;t qua Zalo:
+                                                0989879839.B&#x1B0;&#x1EDB;c 2: ...</div>
+                                            <div>
+                                                <div class="floatleft">
+                                                    Giá: <span class="product-price">D&#x1B0;&#x1EDB;i 30
+                                                        t&#x1EF7;</span>&nbsp;
+                                                    Diện tích: <span class="product-area">Kh&#xF4;ng x&#xE1;c
+                                                        &#x111;&#x1ECB;nh</span><br />
+                                                    Quận/Huyện: <span class="product-city-dist">B&#xEC;nh Th&#x1EA1;nh,
+                                                        Ph&#xFA; Nhu&#x1EAD;n, Qu&#x1EAD;n 1, Qu&#x1EAD;n 3, Qu&#x1EAD;n
+                                                        4</span>
+                                                    <span class="inline-blk">
+                                                        Tỉnh/TP: <span class="product-city-dist">H&#x1ED3; Ch&#xED;
+                                                            Minh</span>
+                                                    </span>
+                                                </div>
+                                                <div class="floatright mar-right-10 bot-right-abs">
+                                                    24/11/2020
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clear10"></div>
+                                    </div>
+                                </div>
+                                
+>>>>>>> e94aa7a... fix_view_share_in_all_page
 
                                 <div class="clear"></div>
                             </div>
@@ -1497,7 +1600,11 @@
             </div>
         </div>
         <div class="clearfix"></div>
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> e94aa7a... fix_view_share_in_all_page
     </div>
 
     <div id="SiteRight" class="banner-right clearfix">
@@ -1536,6 +1643,7 @@
 @endsection
 
 @section('scripts')
+<<<<<<< HEAD
     <div class="modal fade" id="dialogPopup" role="dialog">
         <div class="nomodal"></div>
         <div class="modal-dialog">
@@ -1799,4 +1907,223 @@
         });
 
     </script>
+=======
+<div class="modal fade" id="dialogPopup" role="dialog">
+    <div class="nomodal"></div>
+    <div class="modal-dialog">
+        <div class="modal-content ">
+        </div>
+    </div>
+</div>
+
+<div class="adPosition" positionCode="BANNER_POSITION_FLOADING_BOTTOM" style=""></div>
+<script type='text/javascript'> var bannerContext={"CateId":0,"PageId":null,"CityCode":null,"DistrictId":null,"CurrentPage":575};</script>
+
+<div class="hide" id="domainUserInfo" data-value="https://batdongsan.com.vn"></div>
+<div class="hide" id="domainWeb" data-value="https://batdongsan.com.vn"></div>
+<div class="hide" id="getBannerUrl" data-value="/microservice-architecture-router/Systems/Banner/GetBanners"></div>
+<div class="hide" id="domainStatistic" data-value="https://statistic.batdongsan.com.vn"></div>
+<div class="popup-content ">
+</div>
+<div class="lg-backdrop in" id="dialog-backdrop" style="transition-duration: 150ms;display: none;" onclick="account.CloseAccountPopup()"></div>
+<div id="gototop" title="Go to top"></div>
+</div>
+<div style="display: none"
+ class="searching-histories-configs"
+ max-searching-histories-length="20"
+ sync-time-searching-histories="5"
+ sync-searching-histories-url="/Product/ProductSearch/SyncSearchingHistories"
+ remove-searching-histories-url="/Product/ProductSearch/RemoveSearchingHistory">
+</div>
+
+
+    <script src="https://staticfile.batdongsan.com.vn/js/Common/filestatic.ver202011191123.msvbds.FrontEnd.Common.min.js"></script>
+
+<!--start BannerContext-->
+<script type='text/javascript'> var __bannerContext={"PageId":575,"CateId":null,"CityCode":null,"DistrictId":null,"CurrentPage":1};</script>
+<!--end BannerContext-->
+<!--Start of Zendesk Chat Script-->
+<script type="text/javascript">
+window.$zopim || (function (d, s) {
+    var z = $zopim = function (c) { z._.push(c) }, $ = z.s =
+        d.createElement(s), e = d.getElementsByTagName(s)[0]; z.set = function (o) {
+            z.set.
+                _.push(o)
+        }; z._ = []; z.set._ = []; $.async = !0; $.setAttribute("charset", "utf-8");
+    $.src = "https://v2.zopim.com/?6fJlcOXWwJofJZOzmeDIifb7bHGvvSte"; z.t = +new Date; $.
+        type = "text/javascript"; e.parentNode.insertBefore($, e)
+})(document, "script");
+</script>
+<!--End of Zendesk Chat Script-->
+<script type="text/javascript">
+    var newsLetterRegister = new newsLetterRegister.NewsLetterRegister();
+    newsLetterRegister.InitializeLoad();
+
+    var commentUser = new commentUser.CommentUser();
+    commentUser.InitializeLoad();
+
+    var paramAccount = {
+        urlListLogin: '/Systems/Account/Login',
+        urlListRegister: '/Systems/Account/Register',
+        urlListForgetPass: '/Systems/Account/ForgetPassword',
+        urlListCity: '/Contacts/CommonData/GetCityList',
+        urlListDistrict: '/Contacts/CommonData/GetListDistrictByCity',
+        urlListWard: '/Contacts/CommonData/GetWardList',
+    };
+
+    var account = new account.Content();
+    account.Initialize(paramAccount);
+
+    var footer = new footer.Footer();
+    footer.Initialize();
+
+    var menu = new menu.Menu();
+    menu.Initialize();
+</script>
+
+<div sync-marked-products-url="/Product/MarkedProducts/SyncMarkedProducts"
+ unmarked-product-url="/Product/MarkedProducts/UnmarkProduct"
+ marked-product-ids-sync-time="0.5"></div>
+
+
+
+<script src="https://staticfile.batdongsan.com.vn/js/FengShui/filestatic.ver202011191123.msvbds.FrontEnd.FengShui.Detail.min.js"></script>
+<script src="https://staticfile.batdongsan.com.vn/js/FengShui/filestatic.ver202011191123.msvbds.FrontEnd.FengShui.SendMail.min.js"></script>
+<script src="https://staticfile.batdongsan.com.vn/js/Product/filestatic.ver202011191123.msvbds.FrontEnd.Product.Search.min.js"></script>
+<script src="https://staticfile.batdongsan.com.vn/js/Product/filestatic.ver202011191123.msvbds.FrontEnd.Product.ProductHome.min.js"></script>
+<script src="https://staticfile.batdongsan.com.vn/js/Productfilestatic.ver202011191123.msvbds./FrontEnd.Product.RegisterEmailSale.min.js"></script>
+<script src="https://staticfile.batdongsan.com.vn/js/Product/filestatic.ver202011191123.msvbds.FrontEnd.Product.Demand.min.js"></script>
+
+<script type="text/javascript">
+
+//Box Phong thuy
+var fengshuiDetail = new fengshuiDetail.Detail();
+var paramsSendMail = {
+ lnkSendEmail: '#lnkSendEmail',
+ btnSendMail: '#btnSendMail',
+ formSubmitSendMail: '#formSubmitSendMail',
+ urlSendMail: '/FengShui/FengShuiSendMail/Send',
+ detailUrl: 'http://batdongsan.com.vn/mua-nha-mat-pho-binh-thanh/can-tim-mua-nha-chinh-chu-gia-tot-tai-cac-quan-tp-hcm-ad105920'
+};
+var fengShuiSendMail = new fengShuiSendMail.FengShuiSendMail();
+fengShuiSendMail.Initialize(paramsSendMail);
+
+//Box send mail
+var paramsDemandSendMail = {
+    lnkSendEmail: '#lnkDemandSendEmail',
+    btnSendMail: '#btnSendMail',
+    formSubmitSendMail: '#formSubmitSendMail',
+    tilePopup: 'Đóng góp - Phản hồi',
+    urlSendMail: '/Demand/DemandSendMail/Send',
+    detailUrl: 'http://batdongsan.com.vn/mua-nha-mat-pho-binh-thanh/can-tim-mua-nha-chinh-chu-gia-tot-tai-cac-quan-tp-hcm-ad105920'
+};
+fengShuiSendMail.Initialize(paramsDemandSendMail);
+
+//Box Search
+var params = {
+    formSubmit: "#formSubmit",
+    loadContent: "#contentPage",
+    ddlSortBy: "#ddlSortBy",
+    tabActive: ".tabactive",
+    tabIndexValue: "#tabIndexValue",
+    sortValue: "#sortValue",
+    urlListDistrict: '/Contacts/CommonData/GetListDistrictByCity',
+    urlListStreet: '/Contacts/CommonData/GetStreetList',
+    urlListWard: '/Contacts/CommonData/GetWardList',
+    urlListRoom: '/Contacts/CommonData/GetRoomList',
+    urlListDirection: '/Contacts/CommonData/GetDirectionList',
+    urlListProject: '/Contacts/CommonData/GetListProjectByDistrict',
+    urlListSubCate: '/Contacts/CommonData/GetCategoryByParentId',
+    urlListPrice: '/Contacts/CommonData/GetPriceList',
+    urlRegisterEmailSale: '/Systems/EmailSendRegister/EmailRegisterSale',
+    suggestionApi: {
+        apiForSell: 'https://suggestion1.batdongsan.com.vn/',
+        apiForRent: 'https://suggestion2.batdongsan.com.vn/'
+    }
+};
+
+var productHome = new product.ProductHome();
+productHome.InitializeLoad(params);
+
+var hdbCategory = $('#divCategory').AdvanceHiddenDropbox({
+    id: 'divCatagoryOptions',
+    hddValue: 'hdCboCatagory'
+});
+
+// Popup Register
+var paramsRegister = {
+    emailregister: "#emailregister",
+    urlRegisterEmailSale: '/Systems/EmailSendRegister/EmailRegisterSale',
+    urlListSubCate: '/Contacts/CommonData/GetAdNewsCateDefinitionHtmlByParentId',
+    urlListDistrict: '/Contacts/CommonData/GetListDistrictByCity',
+    urlListStreet: '/Contacts/CommonData/GetStreetList',
+    urlListWard: '/Contacts/CommonData/GetWardList',
+    urlListRoom: '/Contacts/CommonData/GetRoomList',
+    urlListDirection: '/Contacts/CommonData/GetDirectionList',
+    urlListProject: '/Contacts/CommonData/GetListProjectByDistrict',
+};
+var productRegister = new registerEmailSale.EmailSale();
+productRegister.InitializeLoad(paramsRegister);
+</script>
+
+<script type="text/javascript">
+try {
+    var script_imported = document.createElement('script');
+    script_imported.src = 'https://log.batdongsan.com.vn/js/bds/bds-msv-log.min.js?hv=2&dv=' + (new Date().toJSON().slice(0, 10));
+    if (document.body != null && document.body != undefined) {
+        document.body.appendChild(script_imported);
+    } else {
+        document.head.appendChild(script_imported);
+    }
+} catch (e) { }
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function () {
+    var lazyImages = [].slice.call(document.querySelectorAll('[src-lazy]'));
+    window.countOfLazyImages = lazyImages.length;
+    if ('IntersectionObserver' in window) {
+        let lazyImageObserver = new IntersectionObserver(function (entries, observer) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    let lazyImage = entry.target;
+                    if (lazyImage.attributes['src-lazy']) {
+                        lazyImage.src = lazyImage.attributes['src-lazy'].value;
+                        lazyImage.removeAttribute('src-lazy');
+                        lazyImageObserver.unobserve(lazyImage);
+                    }
+                };
+            });
+        });
+        lazyImages.forEach(function (lazyImage, i) {
+            lazyImage.setAttribute('lazy-id', i);
+            lazyImageObserver.observe(lazyImage);
+        });
+        (function checkDuplicate() {
+            var countOfLazyElements = [].slice.call(document.querySelectorAll('[lazy-id]'));
+            if (countOfLazyElements.length > window.countOfLazyImages) {
+                var elements = [].slice.call(document.querySelectorAll('[src-lazy]'));
+                elements.forEach(element => {
+                    var lazyId = element.attributes['lazy-id'].value;
+                    var lazyElements = [].slice.call(document.querySelectorAll(`[lazy-id="${lazyId}"]`));
+                    if (lazyElements.length > 1) {
+                        for (var i = 1; i < lazyElements.length; i++) {
+                            var lazyElement = lazyElements[i];
+                            lazyImageObserver.observe(lazyElement);
+                            lazyElement.setAttribute('lazy-id', window.countOfLazyImages);
+                            window.countOfLazyImages++;
+                        }
+                    }
+                });
+            }
+            setTimeout(checkDuplicate, 1000)
+        })();
+    } else {
+        $('[src-lazy]').each(function () {
+            this.src = this.attributes['src-lazy'].value;
+            this.removeAttribute('src-lazy');
+        });
+    }
+});
+</script>
+>>>>>>> e94aa7a... fix_view_share_in_all_page
 @endsection

@@ -6,7 +6,10 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Province;
 use App\Models\District;
+use App\Models\Menu_category;
+use App\Models\Post_type;
 use App\Models\Ward;
+use App\Models\Products;
 
 
 use Illuminate\Support\Facades\Storage;
@@ -115,9 +118,13 @@ class UserController extends Controller
 
     public function post() {
 
+        $post = Products::all();
         $provinces = Province::all();
         $districts = District::all();
-        return view ('admin.user.post',compact('provinces','districts'));
+        $wards = Ward::all();
+        $categories = Menu_category::all();
+        $post_types = Post_type::all();
+        return view ('admin.user.post',compact('provinces','districts', 'wards', 'post','categories', 'post_types'));
     }
 
 }

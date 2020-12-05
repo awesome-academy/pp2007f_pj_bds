@@ -112,6 +112,7 @@ Route::prefix('/admin',)->group(function () {
 
     // user -post
     Route::get('/user/post/','UserController@post')->name('postUser');
+    Route::post('/user/post/','PostController@store')->name('storePost');
 
     Route::get('/slide', 'SlideController@index')->name('Slide');
     Route::get('/slide/create', 'SlideController@create')->name('createSlide');

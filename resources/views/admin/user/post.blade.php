@@ -40,14 +40,17 @@
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label control-label">Appearance *</label>
                                 <div class="col-sm-4">
-                                    <select class="form-control" id='appearance'>
-                                        <option class="district" value="0" name="appearance" required>--Form--</option>
+                                    <select name="appearance" class="form-control" id='appearance'>
+                                        <option class="district" value="0" name="appearance" required>Nhà đất bán</option>
+                                        <option class="district" value="1" name="appearance" required>Nhà đất cho thuê</option>
                                     </select>
                                 </div>
                                 <label class="col-sm-2 col-form-label control-label m-l-2">Type *</label>
                                 <div class="col-sm-4">
-                                    <select class="form-control" id='type'>
-                                        <option class="district" value="0">--Category--</option>
+                                    <select name="category" class="form-control" id='type'>
+                                        @foreach ($categories as $category)
+                                        <option class="district" value="{{ $category->id }}">{{ $category->name }}</option>
+                                        @endforeach
                                     </select>
                                 </div>
                             </div>
@@ -55,7 +58,7 @@
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label control-label">Province / City *</label>
                                 <div class="col-sm-4">
-                                    <select class="form-control" id='provices'>
+                                    <select name="province" class="form-control" id='provices'>
                                         <option class="provice" value="0"> --Province / City-- </option>
                                         @foreach ($provinces as $provice)
                                             <option class="provice" value="{{ $provice->code }}"> {{ $provice->name }}
@@ -65,9 +68,10 @@
                                 </div>
                                 <label class="col-sm-2 col-form-label control-label m-l-2">County / District *</label>
                                 <div class="col-sm-4">
-                                    <select class="form-control" id='districts'>
-                                        <option class="district" value="0">--County / District--</option>
-
+                                    <select name="district" class="form-control" id='districts'>
+                                        @foreach ($districts as $district)
+                                        <option class="district" value="{{ $district->code }}">{{ $district->name }}</option>
+                                        @endforeach
                                     </select>
                                 </div>
                             </div>
@@ -75,13 +79,15 @@
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label control-label"> Wards </label>
                                 <div class="col-sm-4">
-                                    <select class="form-control" id='wards'>
-                                        <option class="ward">--Wards--</option>
+                                    <select name="ward" class="form-control" id='wards'>
+                                        @foreach ($wards as $ward)
+                                        <option value="{{ $ward->code }}" class="ward">{{ $ward->name }}</option>
+                                        @endforeach
                                     </select>
                                 </div>
                                 <label class="col-sm-2 col-form-label control-label m-l-2">Street </label>
                                 <div class="col-sm-4">
-                                    <input type="email" class="form-control" name="email" placeholder="--Street--" required>
+                                    <input type="text" class="form-control" name="email" placeholder="--Street--" required>
                                 </div>
                             </div>
 
@@ -104,8 +110,13 @@
 
                                 <label class="col-sm-2 col-form-label control-label my-2">Unit</label>
                                 <div class="col-sm-4 my-2">
-                                    <select class="form-control" id='type' style="font-size: 20px">
-                                        <option class="district" value="0">--Unit--</option>
+                                    <select name="unit" class="form-control" id='type' style="font-size: 20px">
+                                        <option class="district" value="tỷ">tỷ</option>
+                                        <option class="district" value="triệu">triệu</option>
+                                        <option class="district" value="triệu/m2">triệu/m2</option>
+                                        <option class="district" value="triệu/m2">tỷ/m2</option>
+                                        <option class="district" value="triệu/m2">triệu/tháng</option>
+                                        
                                     </select>
                                 </div>
 
@@ -237,8 +248,10 @@
                             <div class="form-group row">
                                 <div class="col-sm-4">
                                     <label class="col-sm-12 col-form-label control-label">Ad type</label>
-                                    <select class="form-control" id='type' style="height:45px">
-                                        <option class="district form-control" value="0">--Ad type--</option>
+                                    <select name="post_type" class="form-control" id='type' style="height:45px">
+                                        @foreach ($post_types as $post_type)
+                                        <option class="district form-control" value="{{ $post_type->id }}">{{ $post_type->name }}</option>
+                                        @endforeach
                                     </select>
                                 </div>
 

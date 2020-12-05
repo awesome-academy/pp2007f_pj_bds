@@ -34,8 +34,9 @@ class PostController extends Controller
         $districts = District::all();
         $provinces = Province::all();
         $types = Post_type::all();
+        $images = Image::where('products_id', '=', $id)->get();
 
-        return view('admin.edit_post', compact('post', 'wards', 'districts', 'provinces', 'types'));
+        return view('admin.edit_post', compact('post', 'wards', 'districts', 'provinces', 'types', 'images'));
     }
 
     public function updatePost(Request $request, $id) {
@@ -65,6 +66,40 @@ class PostController extends Controller
         $posts->delete();
         echo view('admin.posts', compact('posts'));
         exit;
+    }
+
+    public function uploadImage(Request $request)
+    {
+        $product = Products::create($request->all());
+        foreach ($request->photos as $photo) {
+            $name = $photo->store('photos');
+            Image::create([
+                'products_id' => $product->id,
+                'name' => $name
+            ]);
+        }
+        return 'Upload successful!';
+    }
+
+    public function store(Request $request)
+    {
+        $post = new Products();
+        $post->title = $request->get('title');
+        $post->type = $request->get('appearance');
+        $post->menu_category_id = $request->get('category');
+        $post->provinces_id = $request->get('province');
+        $post->districts_id = $request->get('district');
+        $post->wards_id = $request->get('ward');
+        $post->address = $request->get('email');
+        $post->area = $request->get('acreage');
+        $post->price = $request->get('price');
+        $post->unit = $request->get('unit');
+        $post->content = $request->get('content');
+        $post->number_of_floor = $request->get('floors');
+        $post->number_of_bedroom = $request->get('bedrooms');
+        $post->post_type_id = $request->get('post_type');
+        $post->save();
+        return back();
     }
 }
 
