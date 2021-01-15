@@ -188,7 +188,7 @@
             <ul>
 
                         <li>    
-                            <button onclick="topic('kinh nghiem')">Kinh nghiệm mua bán nhà</button>
+                            <button onclick="topic('mua ban nha')">Kinh nghiệm mua bán nhà</button>
                         </li>
 
                         <li>    
@@ -202,7 +202,7 @@
                         </li>
 
                         <li>    
-                            <button onclick="topic('tinh hinh')">Diễn biến thị trường BĐS năm 2020</button>
+                            <button onclick="topic('thi truong')">Diễn biến thị trường BĐS năm 2020</button>
 
                         </li>
 
@@ -240,17 +240,17 @@
     <div class="bor_box">
         <ul>
             <li>
-                <a href="/ho-tro-tien-ich/ht-xem-huong-nha">
+                <a href="/phong-thuy">
                     <img alt="Tư vấn phong thủy" src="https://file4.batdongsan.com.vn/images/icon-phongthuy.png">Tư vấn phong thủy
                 </a>
             </li>
             <li>
-                <a href="/ho-tro-tien-ich/ht-du-toan-chi-tiet">
+                <a href="https://www.nhadepuct.com.vn/bao-gia/bao-gia.html">
                     <img alt="Tính lãi suất" src="https://file4.batdongsan.com.vn/images/icon-chiphi.png">Dự tính chi phí làm nhà
                 </a>
             </li>
             <li>
-                <a href="/ho-tro-tien-ich/ht-tinh-lai-suat">
+                <a href="https://www.techcombank.com.vn/cong-cu-tien-ich/cong-cu-tinh-toan/tinh-lai-tiet-kiem">
                     <img alt="Tính lãi suất" src="https://file4.batdongsan.com.vn/images/icon-laisuat.png">Tính lãi suất
                 </a>
             </li>

@@ -56,8 +56,10 @@ class TinTucController extends Controller
 
     public function searchTinTuc(Request $req) {
         $articles = Article::where('title','LIKE','%'.$req->timtintuc.'%')->orWhere('content','LIKE','%'.$req->timtintuc.'%')->simplePaginate(10);
+        $recommend = Article::all()->random(8);
 
-        return view("pages.tintucbds.tintuc", compact('articles'));
+
+        return view("pages.tintucbds.tintuc", compact('articles','recommend'));
 
     }
 
