@@ -28,7 +28,11 @@
                         </div>
                     @endif
                     <table class="table table-hover table-xl">
+                        @if (Auth::user()->inRole('admin'))
                         <form method="GET" action="{!!  Route('filterPost') !!}">
+                        @else
+                        <form method="GET" action="{!!  Route('filterPost2') !!}">
+                        @endif
                         <thead>
                             <tr>
                                 <th>
@@ -57,13 +61,6 @@
                                 </th>
 
                                 <th>
-                                    {{-- <div class="col-sm-8">
-                                        <div class="icon-input">
-                                            <i class="mdi mdi-timer"></i>
-                                            <input id="datepicker-1" data-provide="datepicker" type="text"
-                                                class="form-control date date1" name="end_date" placeholder="Pick date end">
-                                        </div>
-                                    </div> --}}
 
                                     <select id="post_date" name="post_date" class="form-control">
                                         <option value="90000000000000000000000" selected>Submit Time</option>
@@ -173,7 +170,6 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-        @if (Auth::user()->inRole('admin'))
             <script>
                 $(document).on('click', '.delete', function() {
 
@@ -274,13 +270,6 @@
                 // });
 
             </script>
-        @else
-            <script>
-                $(document).on('click', '.delete', function() {
-                    alert('You are not admin');
-                });
-
-            </script>
-        @endif
+ 
 
     @endsection
