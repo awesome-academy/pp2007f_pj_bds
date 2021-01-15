@@ -69,9 +69,9 @@
                                 </div>
                             </td>
                             @if ($user->account == null)
-                                <td> 0 </td>
+                                <td> 0 VND</td>
                             @else
-                                <td>{{ $user->account }}</td>
+                                <td>{{ number_format($user->account) }} VND</td>
                             @endif
                             @if (Auth::user()->inRole('admin'))
                                 <td>Admin</td>
