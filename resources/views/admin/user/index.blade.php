@@ -83,9 +83,9 @@
                                             </div>
                                         </td>
                                         @if ($us->account == null)
-                                            <td> 0 </td>
+                                            <td> 0 VND</td>
                                         @else
-                                            <td>{{ number_format($us->account) }}</td>
+                                            <td>{{ number_format($us->account) }} VND</td>
                                         @endif
                                         <td>{{ $us->roles->first()->name }}</td>
                                         <td>{{ $us->email }}</td>
