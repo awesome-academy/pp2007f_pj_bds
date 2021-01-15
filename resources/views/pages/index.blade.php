@@ -33,7 +33,74 @@
             color: white;
         }
 
-    </style>
+    </style> <script src="/assets/js/app.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('.filter-nha-dat').click(function() {
+            $(this).addClass('actived').siblings().removeClass('actived');
+        });
+
+
+        // clear filter
+        $('#link-reset').click(function() {
+            $('#boxSearchForm')[0].reset();
+        })
+    });
+
+    $(document).ready(function() {
+        $(".lv0").hover(function() {
+                $(".lv0 ul").css('display', 'block');
+            },
+            function() {
+                $(".lv0 ul").css('display', 'none');
+            });
+    });
+
+</script>
+
+<script>
+
+$(document).ready(function() {
+$('.filter-nha-dat').click(function() {
+    $(this).addClass('actived').siblings().removeClass('actived');
+});
+
+
+// clear filter
+$('#link-reset').bind('click', function() {
+    $('#filter-province').val('0');
+    $('#filter-district').val('0');
+    $('#filter-price').val('0');
+    $('#filter-area').val('0');
+});
+
+$(".province").on('click', function() {
+    var id = $(this).val();
+    $.ajax({
+        type: "get",
+        url: "/getDistrict",
+        data: {
+            parent_code: id
+        },
+        dataType: "html",
+        success: function(data) {
+
+        }
+    }).done(function(data) {
+        $('.district').html(data);
+    });
+});
+
+$('.custom-control-label').click(function(){
+    if($('.custom-dropbox').hasClass('hiding')){
+        $('.custom-dropbox').removeClass('hiding');
+    }else{
+        $('.custom-dropbox').addClass('hiding');
+    }               
+})
+});
+</script>
 @endsection
 
 
@@ -1502,72 +1569,5 @@
     @section('scripts')
 
 
-        <script src="/assets/js/app.min.js"></script>
-
-        <script>
-            $(document).ready(function() {
-                $('.filter-nha-dat').click(function() {
-                    $(this).addClass('actived').siblings().removeClass('actived');
-                });
-
-
-                // clear filter
-                $('#link-reset').click(function() {
-                    $('#boxSearchForm')[0].reset();
-                })
-            });
-
-            $(document).ready(function() {
-                $(".lv0").hover(function() {
-                        $(".lv0 ul").css('display', 'block');
-                    },
-                    function() {
-                        $(".lv0 ul").css('display', 'none');
-                    });
-            });
-
-    </script>
-
-<script>
-
-    $(document).ready(function() {
-        $('.filter-nha-dat').click(function() {
-            $(this).addClass('actived').siblings().removeClass('actived');
-        });
-
-
-        // clear filter
-        $('#link-reset').bind('click', function() {
-            $('#filter-province').val('0');
-            $('#filter-district').val('0');
-            $('#filter-price').val('0');
-            $('#filter-area').val('0');
-        });
-
-        $(".province").on('click', function() {
-            var id = $(this).val();
-            $.ajax({
-                type: "get",
-                url: "/getDistrict",
-                data: {
-                    parent_code: id
-                },
-                dataType: "html",
-                success: function(data) {
-
-                }
-            }).done(function(data) {
-                $('.district').html(data);
-            });
-        });
-
-        $('.custom-control-label').click(function(){
-            if($('.custom-dropbox').hasClass('hiding')){
-                $('.custom-dropbox').removeClass('hiding');
-            }else{
-                $('.custom-dropbox').addClass('hiding');
-            }               
-        })
-    });
-</script>
+       
 @endsection
