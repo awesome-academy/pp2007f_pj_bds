@@ -53,6 +53,21 @@ class UserSeeder extends Seeder
             'address' => $faker->address,
         ]);
         $user1->roles()->attach($role2);
+        for($i=2;$i<1000;$i++) {
+            $user3 = User::create([
+                'username' => $faker->userName,
+                'email' => $faker->email,
+                'password' => bcrypt('123456'),
+                'fullname' => 'kviet91' ,
+                'account' => rand(100,1000)*1000,
+                'sex' => rand(0,1),
+                'dateofbirth' => $faker->date($format = 'Y-m-d', $max = 'now'),
+                'phonenumber' => $faker->phoneNumber,
+                'avatar' => $faker->gravatarUrl(),
+                'address' => $faker->address,
+            ]);
+            $user3->roles()->attach($role2);
+        };
     
     }
 }

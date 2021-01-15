@@ -178,7 +178,7 @@ Route::group(['middleware' => ['auth', 'admin','locale']], function(){
         Route::get('/user/restoretrashed/{id}','UserController@restoreTrashed')->name('restoreTrashed');
         Route::get('/user/forcetrashed/{id}','UserController@forceTrashed')->name('forceTrashed');
 
-        Route::get('/user/transactionHistory','UserController@tHistoransactionHistory')->name('transactionHistory');
+        Route::get('/user/transactionHistory','UserController@transactionHistory')->name('transactionHistory');
         
         // user -post
 
