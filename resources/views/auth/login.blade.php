@@ -51,6 +51,11 @@
                                                 <strong>{{ $message }}</strong>
                                             </span>
                                             @enderror
+                                            @if(session('error'))
+                                            <div class="col-md-12" style="color: red">
+                                                {{ session('error') }}
+                                            </div>
+                                            @endif
                                         </div>
                                         <div class="form-group">
                                             <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">

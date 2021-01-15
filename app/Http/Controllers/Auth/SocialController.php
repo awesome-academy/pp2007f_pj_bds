@@ -45,9 +45,22 @@ class SocialController extends Controller
         $user = Socialite::driver('google')->stateless()->user();
         // dd($user);
         $authUser = $this->findOrCreateUser($user);
-        // dd($authUser);
-        Auth::login($authUser, true);
-        return Redirect::to(Session::get('pre_url'));
+                
+        if(!$authUser){
+
+            return redirect('login')->with('error', 'Email does not exits!');
+
+        } else {
+            Auth::login($authUser, true);
+            if (Auth::user()->inRole('admin'))
+            {
+                return redirect('/admin/index');
+            }
+            else
+            {
+                return redirect('/member/index');
+            }
+         }   
     }
 
         /**
@@ -60,9 +73,10 @@ class SocialController extends Controller
         $authUser = User::where('email', $user->email)->first();
         if ($authUser) {
             return $authUser;
-        } else {
-            return redirect()->back();
-        }
+            } else {
+            return false;
+        
+          }	        
         // return User::create([
         //     'name'     => $user->name,
         //     'email'    => $user->email,
