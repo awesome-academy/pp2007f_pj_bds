@@ -483,6 +483,15 @@
                     $('.custom-dropbox').addClass('hiding');
                 }               
             })
+
+            $(document).ready(function() {
+        $(".lv0").hover(function() {
+                $(".lv0 ul").css('display', 'block');
+            },
+            function() {
+                $(".lv0 ul").css('display', 'none');
+            });
+    });
         });
     </script>
     @endsection
