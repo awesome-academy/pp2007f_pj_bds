@@ -443,9 +443,25 @@
                 let f = (d * t);
                 let i = f * 0.1;
                 let g = f + i;
-                $("#total_type").html(f);
+                $("#total_type").html(f/1000+'.000');
+                if(i<1000) {
                 $('#vat').html(i);
+                } else if(i>1000 && i%1000==0) {
+                $('#vat').html(i/1000+'.000');
+                }
+                else {
+                    $('#vat').html(i/1000+'00');
+                };
+
+                if(g<1000) {
                 $('#total_price').html(g);
+                } else if(g>1000 && g%1000==0) {
+                $('#total_price').html(g/1000+'.000');
+                }
+                else {
+                    $('#total_price').html(g/1000+'00');
+                };
+
             });
 
 
